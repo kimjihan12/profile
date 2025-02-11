@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kim_jihan</title>
+    
+    <style>
+        body {
+            background-color: #0e0d0d; /* 밝은 회색 배경 */
+            color: white;
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #1e1e1e;
+            border-radius: 20px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            padding: 40px 20px;
+            min-height: 900px;
+            box-sizing: border-box;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 컨테이너 그림자 */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* 상단과 하단 여백을 균일하게 */
+        }
+        .banner {
+            width: 100%;
+            height: 202px;
+            border-radius: 10px 10px 0 0;
+            background-color: #7289da;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 배너 그림자 */
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile {
+            margin-top: -80px; /* 프로필 사진을 배너 위로 겹치게 */
+            border-radius: 50%;
+            width: 150px; /* 크기 증가 */
+            height: 150px; /* 크기 증가 */
+            background-color: gray;
+            overflow: hidden;
+            margin: 0 auto;
+            border: 5px solid white; /* 프로필 사진 테두리 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 프로필 그림자 */
+        }
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nickname {
+            margin-top: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: #f4f4f4;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .status-message {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #c7c7c7;
+        }
+        .button-short-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px; /* 버튼 사이 간격 */
+        }
+        .button-short {
+    width: 60%;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background:white; /* 빨강, 주황, 검정 그라데이션 */
+    border: none;
+    border-radius: 15px; /* 더 둥근 버튼 */
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), inset 0 -3px 5px rgba(0, 0, 0, 0.2); /* 3D 효과 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* 링크에 기본 밑줄 제거 */
+}
+
+.button-short:hover {
+    transform: scale(1.05); /* 확대 효과 */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25), inset 0 -5px 8px rgba(0, 0, 0, 0.3); /* 더 강한 그림자 */
+}
+
+.button-short:active {
+    transform: scale(0.95); /* 클릭 시 살짝 축소 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.3); /* 깊이감 */
+}
+
+
+        /* 하단 문구 스타일 */
+        .footer {
+            margin-top: 100px; /* 상단 여백 */
+            padding: 20px;
+            font-size: 20px;
+            color: #c7c7c7;
+            background-color: #333;
+            border-radius: 0 0 20px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="banner">
+            <img src="베너.gif" alt="디스코드 배너">
+        </div>
+
+        <div class="profile">
+            <img src="사이트 이미지.jpg" alt="프로필 사진">
+        </div>
+
+        <div class="nickname">
+            <p>닉네임: kim_jihan</p>
+        </div>
+
+        <div class="status-message">
+            <p>웹 사이트 개발자 & 디스코드 봇 개발자</p>
+        </div>
+
+        <!-- 버튼 섹션 -->
+        <div class="button-short-container">
+            <a href="https://kimjihan12.github.io/pr/" target="_blank" class="button-short">🖤 지한 자기소개 🖤</a>
+            <a href="https://curious.quizby.me/d9Pthg/m" target="_blank" class="button-short">🌑 큐리어스 바로가기 🌑</a>
+            <a href="https://discord.gg/6yuP6j2Rbh" target="_blank" class="button-short">🔮 은하서버 가는길 🔮</a>
+        </div>
+
+        <!-- 하단 문구 섹션 -->
+        <div class="footer">
+            <p>모든 문의 DM</p>
+        </div>
+        
+    </div>
+
+</body>
+</html>
